@@ -1,4 +1,12 @@
-// DOM Traversal
+// DOM Traversal Method
+// parentNode => menghasilkan node
+// parentElement => menghasilkan element
+// nextSibling => menghasilkan element
+// nextElementSibling => menghasilkan element
+// previousSibling => menghasilkan node
+// previousElementSibling => menghasilkan element
+
+
 const close = document.querySelectorAll('.close');
 
 /*
