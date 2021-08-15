@@ -17,4 +17,4 @@ box.addEventListener('click', function () {
     setTimeout(() => {
         this.classList.toggle('caption');
     }, 600);
-});
+}); 
