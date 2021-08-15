@@ -1,49 +1,33 @@
-// this pada ARROW FUNCTION
-// Constructor Function
-const Mahasiswa1 = function() {
-    this.nama = 'Prasetiyo';
-    this.umur = 30;
-    this.sayHello = function() {
-        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
-    };
-}
+// Higher Order Function
 
-const prasetiyo = new Mahasiswa1();
+/*
+"Function yang beroperasi pada function yang lain. Baik itu digunakan dalam argument, maupun sebagai return value."
+- https://eloquentjavascript.net
+"Javascript memperlakukan function sebagai object."
+- sitepoint.com
+Alasan menggunakan Higher Order Function :
+- Abstraksi
+Contoh High Order Function
+- Array.prototype.map()
+- Array.prototype.filter()
+- Array.prototype.reduce()
+*/
 
-// Arrow Function dengan constructor
-const Mahasiswa2 = function () {
-    this.nama = 'Ramdani Setiawan';
-    this.umur = 25;
-    this.sayHello = () => {
-        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
-    };
-}
-
-const ramdani = new Mahasiswa2();
-
-// Object Literal
-const mhs1 = {
-    nama: 'Prasetiyo',
-    umur: 33,
-    sayHello: function () {
-        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+// Contoh 1.
+function repeatLog(n) {
+    for(let i = 0; i < n; i++) {
+        console.log(i);
     }
-};
-
-// ---
-
-const Mahasiswa3 = function() {
-    this.nama = 'Khoirun';
-    this.umur = 30;
-    this.sayHello = function() {
-        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
-    };
-
-    setInterval(() => {
-        console.log(this.umur++);
-    }, 500);
 }
 
-const khoirun = new Mahasiswa3();
+repeatLog(100);
 
-// ---
+// --
+
+function repeat(n, action) {        //repeat merupakan HOF dan parameter ke dua berupa function
+    for (let i = 0; i < n; i++) {
+        action(i);
+    }
+}
+repeat(10, console.log);
+repeat(3, alert); 
