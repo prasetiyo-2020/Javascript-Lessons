@@ -48,6 +48,3 @@ function Mahasiswa(nama, energy) {
 }
 
 let prasetiyo = new Mahasiswa('Prasetiyo', 10);
-
-
-// test commit
