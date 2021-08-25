@@ -1,3 +1,3 @@
 # Javascript
 
-Repo untuk belajar javascript.
+This repository is used to track progress in using the Javascript programming language.
