@@ -1,5 +1,4 @@
-IF/ELSE STATEMENT
-
+// IF/ELSE STATEMENT
 // Example 1:
 const isRaining = true;
 
@@ -30,7 +29,7 @@ Nilai kurang dari 70
 
 // Example 3:
 let language = "French";
-let greeting = "Selamat Pagi"
+let greeting = "Selamat Pagi";
 
 if(language === "English") {
 greeting = "Good Morning!";
@@ -52,9 +51,12 @@ Bonjour!
 const isMember = false;
 const discount = isMember ? 0.1 : 0;
 console.log("Anda mendapatkan diskon sebesar " + discount * 100 + "%");
+/* output
+Anda mendapatkan diskon sebesar 0%
+*/
 
 
-Truthy & Falsy
+// Truthy & Falsy
 /*
     Number 0
     BigInt 0n
@@ -77,9 +79,7 @@ console.log("Nama masih kosong");
 Nama masih kosong
 */
 
-/* output
-Anda mendapatkan diskon sebesar 0%
-*/
+
 
 // Example 6:
 /**
