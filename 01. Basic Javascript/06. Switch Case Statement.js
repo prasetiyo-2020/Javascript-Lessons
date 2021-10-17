@@ -1,4 +1,4 @@
-SWITCH CASE STATEMENT    
+// SWITCH CASE STATEMENT    
 
 switch (expression) {
   case value1:
@@ -13,7 +13,7 @@ switch (expression) {
     // do something else
 }
 
-Example 1:
+// Example 1:
 let language = "French";
 let greeting = null;
 
@@ -37,7 +37,7 @@ console.log(greeting);
 Bonjour!
 */
 
-Example 2 :
+// Example 2 :
 const rank = 5;
 
 switch (rank) {
