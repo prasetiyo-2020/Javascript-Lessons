@@ -1,5 +1,4 @@
-//**OPERATOR
-
+// OPERATOR
 // Pertambahan
 (namaVariabel + namaVariabel)
 
@@ -15,19 +14,17 @@
 // Sisa Bagi
 (namaVariabel % namaVariabel)
 
-
-
-//*******CONTOH********\\
+// CONTOH DARI HASIL OPERATOR
 let a = 12;
 let b = 9;
 
-console.log(a + b)
-console.log(a - b)
-console.log(a * b)
-console.log(a / b)
-console.log(a % b)
+console.log(a + b) // Output : 21
+console.log(a - b) // Output : 3
+console.log(a * b) // Output : 108
+console.log(a / b) // Output : 1.3333333333333333
+console.log(a % b) // Output : 3
 
-//**COMPARISON OPERATOR
+// COMPARISON OPERATOR
 let a = 10;
 let b = 12;
 
